@@ -1,47 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles/main.css">
+
     <title>Book Review and Rating Website</title>
 
-<main>
-<head>
-<h2> Book Review & Rating Website</h2>
+    <main>
 
-<h3>under construction</h3>
+        <head>
+            <h2> Book Nest Reviews Website</h2>
 
-</head>
-        
-    <p> My project will be a website where I review books and give them ratings based on my opinion. Each review will include the book title, author, genre, a short summary, favorite quotes, and my rating. The goal of the website is to help readers find new books and learn more about whether a book might interest them. The website will include sections such as a homepage, reviews page, favorite books page, and genre categories.</p> 
+            <h3>Here to fine more book to read</h3>
 
-   <ul>
-    <li><strong>Home Page:</strong> Introduces the website and explains its purpose. It will welcome visitors and highlight featured book reviews.</li>
-
-    <li><strong>Book Reviews Page:</strong> Contains detailed reviews of different books including summaries, favorite quotes, and my personal opinions.</li>
-
-    <li><strong>Top Rated Books Page:</strong> Displays the highest rated books on the website along with star ratings and short descriptions.</li>
-
-    <li><strong>Genres Page:</strong> Organizes book recommendations by genre such as mystery, fantasy, romance, and nonfiction.</li>
-
-    <li><strong>About Page:</strong> Provides information about me and explains why I enjoy reading and reviewing books.</li>
-
-    <li><strong>Contact Page:</strong> Allows visitors to send feedback or book suggestions through a contact form or email link.</li>
-</ul>
-
-
-
-
+        </head>
 
 <body>
+    <header>
+        <h1>Book Nest Reviews</h1>
+        <p>Your place to discover and rate great books</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="genres.html">Genres</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <main>
+        <section>
+            <div class="divpic">
+                <h2>Featured Book</h2>
+                <p>Read our newest review and rating.</p>
+                <p>⭐⭐⭐⭐⭐</p>
+                <img class="featured" src="images/kingofgluttony.jpg" alt="kingofgluttony">
+            </div>
+
+        </section>
+
+        <aside>
+            <h3 class="t1">Top Picks All Time</h3>
+
+            <img class="topbook" src="images/thedeal.jpg" alt="thedeal">
+            <div class="top-pick">The Deal by Elle Kennedy</div>
+
+            <img class="topbook" src="images/fearoffalling.jpg" alt="fearoffalling">
+            <div class="top-pick">Fear of Falling by Kenadee Bryant</div>
+
+            <img class="topbook" src="images/hiddenempire.jpeg" alt="hiddenempire">
+            <div class="top-pick">Hidden Empire by K.L. Mann </div>
+
+
+
+        </aside>
+
+        <body>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> BookNest Reviews</p>
+    </footer>
     
-</body>
-
-<footer>
-
-</footer>
-
-
-</main>
-
+ <button id="cornerbtn" class="return-to-top" title="Return to top" onclick="topFunction()"><img
+                src="images/arrowhead-up.png" alt=""></button>
 </html>
+<script src="js/scripts.js"></script>
