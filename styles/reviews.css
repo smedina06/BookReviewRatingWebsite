@@ -4,89 +4,229 @@
     box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background-color: #f8f4ec;
-  color: #333;
+
+/* Fix slideshow image size */
+.review-slide img {
+  width: 100%;
+  max-width: 300px;   
+  height: 400px;      
+  object-fit: cover;  
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto 15px auto;
 }
 
-header {
-  background-color: #5c4033;
-  color: white;
-  text-align: center;
-  padding: 20px;
+.review-slide img {
+  display: block;
+  margin: 0 auto;  
 }
 
 
 nav {
-  background-color: #8b5e3c;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 12px;
+    background-color: #8b5e3c;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 12px;
 }
 
 nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 nav a:hover {
-  text-decoration: underline;
-}
-
-main {
-  display: flex;
-  grid-template-columns: 3fr 1fr;
-  gap: 20px;
-  padding: 20px;
-}
-
-.topbook {
-     width: 100%;
-    height: auto;
-    padding: 10px;
-}
-
-
-.picks {
-    font-size: 18px;
-    color: black;
-}
-
-ul {
-     padding: 20px;
-}
-
-.t1 {
-    font-size: 1.25rem;
-    text-align: center;
-    padding: 10px;
+    text-decoration: underline;
 }
 
 
 footer {
- background-color: #5c4033;
-  color: white;
-  text-align: center;
-  padding: 20px;
+    background-color: #5c4033;
+    color: white;
+    text-align: center;
+    padding: 20px;
+      justify-content: center;
 }
 
-/* Media Query */
+
+.search-section {
+  text-align: center;
+  background-color: #f3e7d3;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+#bookSearch {
+  width: 80%;
+  max-width: 400px;
+  padding: 12px;
+  font-size: 18px;
+  border: 2px solid #8b5e3c;
+  border-radius: 8px;
+}
+
+/* Review Slideshow */
+
+.review-slideshow {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.slides {
+  position: relative;
+  overflow: hidden;
+  min-height: 520px;
+}
+
+.review-slide {
+  display: none;
+  background-color: white;
+  padding: 25px;
+  border-radius: 15px;
+  border: 2px solid #d6c3aa;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  animation: fade 1s;
+}
+
+.review-slide h3 {
+  color: #5c4033;
+  font-size: 28px;
+  margin-top: 15px;
+}
+
+.stars {
+  color: #d6a85c;
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.3;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* Return-to-top button */
+#topBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px 16px;
+  background-color: #8b5e3c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#topBtn:hover {
+  background-color: #d6a85c;
+  color: #2f1b12;
+}
+
+
 @media (max-width: 767px) {
+
+  /* HEADER */
+  header {
+    text-align: center;
+    padding: 20px 10px;
+  }
+
+  header h1 {
+    font-size: 26px;
+  }
+
+  /* NAV (stack links) */
   nav {
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  main {
-    grid-template-columns: 1fr;
+  nav a {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
   }
 
-  img {
+  /* MAIN */
+  main {
+    display: block;
+    padding: 15px;
+  }
+
+  /* SLIDESHOW SECTION */
+  .review-slideshow {
     width: 100%;
-    height: auto;
+  }
+
+  .slides {
+    min-height: auto; /* removes fixed height issues */
+  }
+
+  .review-slide {
+    padding: 15px;
+    text-align: center;
+  }
+
+  /* FIX IMAGES */
+  .review-slide img,
+  .medium-img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;        /* VERY IMPORTANT */
+    display: block;
+    margin: 0 auto 15px auto;
+    object-fit: cover;
+  }
+
+  /* TEXT */
+  .review-slide h3 {
+    font-size: 20px;
+  }
+
+  .stars {
+    font-size: 18px;
+  }
+
+  .review-slide p {
+    font-size: 15px;
+  }
+
+  /* SEARCH BAR */
+  .search-section {
+    text-align: center;
+  }
+
+  #bookSearch {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  /* FOOTER */
+  footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  /* TOP BUTTON */
+  #topBtn {
+    bottom: 15px;
+    right: 15px;
+    padding: 10px;
+    font-size: 14px;
   }
 }

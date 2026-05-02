@@ -4,39 +4,81 @@
     box-sizing: border-box;
 }
 
+.welcome-section {
+  background-color: #fffaf0;
+  text-align: center;
+  padding: 35px;
+  border-radius: 15px;
+  border: 2px solid #d6c3aa;
+}
+
+.welcome-section h2 {
+  color: #5c4033;
+  font-size: 32px;
+}
+
+.welcome-section p {
+  font-size: 19px;
+  max-width: 750px;
+  margin: 15px auto;
+}
+
+.welcome-btn {
+  display: inline-block;
+  margin-top: 15px;
+  background-color: #8b5e3c;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.welcome-btn:hover {
+  background-color: #d6a85c;
+  color: #2f1b12;
+}
+
+/* goolge font */
+
 .patrick-hand-regular {
+  font-family: "Patrick Hand", cursive;
   font-weight: 400;
   font-style: normal;
 }
 
+
+/* Body */
 body {
-    font-family: "Patrick Hand", cursive;
   margin: 0;
   background-color: #f8f4ec;
   color: #333;
 }
 
-
-.divpic {
-   gap: 20px;
-  padding: 20px;
-}
-
-
+/* Header */
 header {
   background-color: #5c4033;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 30px;
 }
 
+header h1 {
+  margin: 0;
+  font-size: 40px;
+}
 
+header p {
+  font-size: 20px;
+}
+
+/* Nav */
 nav {
   background-color: #8b5e3c;
   display: flex;
   justify-content: center;
   gap: 20px;
-  padding: 12px;
+  padding: 15px;
 }
 
 nav a {
@@ -49,94 +91,196 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* Layout */
 main {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  gap: 20px;
+  gap: 25px;
+  padding: 25px;
+}
+
+/* Sections */
+section {
+  background-color: white;
   padding: 20px;
+  border-radius: 12px;
+  border: 2px solid #d6c3aa;
+  margin-bottom: 20px;
 }
 
-.featured {
-    width: 100%;
-    height: auto;
-    padding: 10px;
+/* Aside */
+aside {
+  background-color: #fff3d6;
+  padding: 20px;
+  border-radius: 12px;
+  border: 2px solid #d6a85c;
 }
 
-
-.genre-book {
+/* Top picks (no list) */
+.top-pick {
   background-color: #f3e7d3;
-  color: #3b2418;
-  padding: 12px;
-  margin: 10px 0;
-  border-left: 5px solid #8b5e3c;
+  padding: 10px;
+  margin: 8px 0;
   border-radius: 6px;
-  font-size: 18px;
+  text-align: center;
+}
+
+/* Images */
+.medium-img {
+  display: block;
+  margin: 15px auto;
+  width: 100%;
+  max-width: 300px;   
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Slideshow */
+.slideshow-container {
+  text-align: center;
 }
 
 
-
-
-.topbook {
-     width: 100%;
-    height: auto;
-    padding: 10px;
+.review-slide img {
+  display: block;
+  margin: 0 auto 15px auto;
+  width: 100%;
+  max-width: 280px;   
+  height: 380px;      
+  object-fit: cover;  
+  border-radius: 10px;
 }
 
 
-.picks {
-    font-size: 18px;
-    color: black;
+.slide {
+  display: none;
+  width: 100%;
+  max-width: 350px;
+  height: 400px;
+  object-fit: cover;
+  margin: 0 auto;
+  border-radius: 10px;
 }
 
-li {
-     padding: 20px;
-     text-decoration: none;
-}
-
-.t1 {
-    font-size: 1.25rem;
-    text-align: center;
-    padding: 10px;
-}
-
-
+/* Footer */
 footer {
- background-color: #5c4033;
+  background-color: #5c4033;
   color: white;
   text-align: center;
   padding: 20px;
+  font-variant: small-caps;
 }
 
-.return-to-top {
-    width: 100%;
-    height: auto;
-    padding: 10px;
-    align-items: center;
+/* Return-to-top button */
+#topBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px 16px;
+  background-color: #8b5e3c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#topBtn:hover {
+  background-color: #d6a85c;
+  color: #2f1b12;
 }
 
 
 
-
-
-
-/* Media Query */
+/* GLOBAL MOBILE FIX (ALL PAGES) */
 @media (max-width: 767px) {
+
+  /* GENERAL */
+  body {
+    font-size: 16px;
+  }
+
+  /* HEADER */
+  header {
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 26px;
+  }
+
+  header p {
+    font-size: 16px;
+  }
+
+  /* NAVIGATION */
   nav {
     flex-direction: column;
     align-items: center;
+    gap: 10px;
   }
 
-  main {
-    grid-template-columns: 1fr;
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-  }
-  .topbook {
-     width: 100%;
-    height: auto;
+  nav a {
+    display: block;
     padding: 10px;
-}
+    width: 100%;
+    text-align: center;
+  }
+
+  /* MAIN LAYOUT  */
+  main {
+    display: block;       
+    padding: 15px;
+  }
+
+  /* SECTIONS + ASIDE */
+  section,
+  aside {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+
+  /* IMAGES  */
+  img,
+  .medium-img,
+  .slide,
+  .review-slide img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;          
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* SLIDESHOW */
+  .slides {
+    min-height: auto;
+  }
+
+  .review-slide {
+    text-align: center;
+    padding: 15px;
+  }
+
+  /* TEXT */
+  h2 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  /* BUTTON */
+  #topBtn {
+    bottom: 15px;
+    right: 15px;
+    padding: 10px;
+    font-size: 14px;
+  }
 }

@@ -1,45 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>About</title>
-  <link rel="stylesheet" href="styles/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <link rel="icon" href="images/favicon.png" type="image/png">
 </head>
 
 <body>
 
-<header>
-  <h1>About Us</h1>
-</header>
+    <header>
+        <h1>About Us</h1>
+    </header>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="reviews.html">Reviews</a>
-  <a href="genres.html">Genres</a>
-  <a href="about.html">About</a>
-</nav>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="genres.html">Genres</a>
+        <a href="about.html">About</a>
+    </nav>
+    <main>
 
-<main>
-  <section>
-    <h2>Our Mission</h2>
-    <p>We help readers discover and review books.</p>
-  </section>
+        <section class="about-hero">
+            <h2>About BookNest Reviews</h2>
+            <p>BookNest Reviews helps readers discover new books, explore ratings, and find stories they will enjoy.</p>
+        </section>
 
-  <section>
-    <h2>Contact</h2>
-    <p>Email: booknest@email.com</p>
-    <p>
-      Visit 
-      <a href="https://www.goodreads.com" target="_blank">Goodreads</a>
-    </p>
-  </section>
-</main>
+        <section class="about-card">
+            <h2>Our Mission</h2>
+            <p>Our mission is to make book searching easier by sharing simple reviews, honest ratings, and helpful
+                recommendations.</p>
+        </section>
 
-<footer>
-  <p>&copy; <span id="year"></span> BookNest Reviews</p>
-</footer>
+        <section class="about-card">
+            <h2>Why Reading Matters</h2>
+            <p>Reading can build imagination, improve vocabulary, and help people connect with different stories and
+                perspectives.</p>
+        </section>
 
+        <section class="contact-box">
+            <h2>Contact Us</h2>
+            <p>Email: booknest@email.com</p>
+            <p><a href="https://www.goodreads.com" target="_blank">Visit Goodreads</a></p>
+        </section>
+
+        <section class="about-card">
+            <h2>Next Book Reveal</h2>
+            <p id="countdown">Loading countdown...</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> BookNest Reviews</p>
+    </footer>
+
+    <button id="topBtn" onclick="topFunction()">↑ Top</button>
 
 </body>
+
 </html>
 <script src="js/scripts.js"></script>

@@ -11,18 +11,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
 
 
+
     <link rel="stylesheet" href="styles/main.css">
 
+    <link rel="icon" href="images/favicon.png" type="image/png">
+
     <title>Book Review and Rating Website</title>
-
-    <main>
-
-        <head>
-            <h2> Book Nest Reviews Website</h2>
-
-            <h3>Here to fine more book to read</h3>
-
-        </head>
 
 <body>
     <header>
@@ -37,42 +31,62 @@
         <a href="about.html">About</a>
     </nav>
 
+    <!-- MAIN -->
     <main>
-        <section>
-            <div class="divpic">
-                <h2>Featured Book</h2>
-                <p>Read our newest review and rating.</p>
-                <p>⭐⭐⭐⭐⭐</p>
-                <img class="featured" src="images/kingofgluttony.jpg" alt="kingofgluttony">
-            </div>
 
+        <!-- WELCOME SECTION -->
+        <section class="welcome-section">
+            <h2>Welcome to BookNest Reviews</h2>
+
+            <p>
+                BookNest Reviews is a place where readers can discover new books, read honest reviews,
+                and find ratings before choosing what to read next.
+            </p>
+
+            <p>
+                Whether you enjoy fantasy, romance, mystery, young adult fiction, or nonfiction, this
+                website helps you explore different genres and find books that match your interests.
+            </p>
+
+            <p>
+                Each review includes a short summary, a rating, and a recommendation so visitors can
+                quickly decide if the book is right for them.
+            </p>
+
+            <a href="reviews.html" class="welcome-btn">Read Reviews</a>
         </section>
 
+        <!-- FEATURED BOOK -->
+        <section>
+            <h2>Featured Book</h2>
+            <img src="images/kingofgluttony.jpg" alt="Featured Book" class="medium-img">
+            <p>This months top-rated book is a must-read!</p>
+        </section>
+
+        <!-- SLIDESHOW -->
+        <section class="slideshow-container">
+            <h2>Popular Books</h2>
+
+            <img class="slide" src="images/thedeal.jpg" alt="Book 1">
+            <img class="slide" src="images/fearoffalling.jpg" alt="Book 2">
+            <img class="slide" src="images/hiddenempire.jpeg" alt="Book 3">
+        </section>
+
+        <!-- SIDEBAR -->
         <aside>
-            <h3 class="t1">Top Picks All Time</h3>
-
-            <img class="topbook" src="images/thedeal.jpg" alt="thedeal">
-            <div class="top-pick">The Deal by Elle Kennedy</div>
-
-            <img class="topbook" src="images/fearoffalling.jpg" alt="fearoffalling">
-            <div class="top-pick">Fear of Falling by Kenadee Bryant</div>
-
-            <img class="topbook" src="images/hiddenempire.jpeg" alt="hiddenempire">
-            <div class="top-pick">Hidden Empire by K.L. Mann </div>
-
-
-
+            <h3>Top Picks</h3>
+            <p class="top-pick">Off Campus</p>
+            <p class="top-pick">Fear Of Falling</p>
+            <p class="top-pick">Hidden Empire</p>
         </aside>
 
-        <body>
-
     </main>
-
     <footer>
         <p>&copy; <span id="year"></span> BookNest Reviews</p>
     </footer>
-    
- <button id="cornerbtn" class="return-to-top" title="Return to top" onclick="topFunction()"><img
-                src="images/arrowhead-up.png" alt=""></button>
+
+    <button id="topBtn" onclick="topFunction()">↑ Top</button>
+</body>
+
 </html>
 <script src="js/scripts.js"></script>

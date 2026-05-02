@@ -1,53 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Genres</title>
-  <link rel="stylesheet" href="styles/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles/genres.css">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <link rel="icon" href="images/favicon.png" type="image/png">
+
 </head>
 
 <body>
 
-<header>
-  <h1>Genres</h1>
-</header>
+    <header>
+        <h1>Genres</h1>
+    </header>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="reviews.html">Reviews</a>
-  <a href="genres.html">Genres</a>
-  <a href="about.html">About</a>
-</nav>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="genres.html">Genres</a>
+        <a href="about.html">About</a>
+    </nav>
 
-<main>
-  <section>
-    <h2>Fantasy</h2>
-    <ul>
-      <li>Harry Potter</li>
-      <li>Fourth Wing</li>
-    </ul>
-  </section>
+    <main>
+        <section>
+            <h2>Fantasy</h2>
+            <p class="genre-book">A Court of Thorns and Roses</p>
+            <p class="genre-book">Fourth Wing</p>
+        </section>
 
-  <section>
-    <h2>Romance</h2>
-    <ul>
-      <li>It Ends With Us</li>
-      <li>The Fault in Our Stars</li>
-    </ul>
-  </section>
+        <section>
+            <h2>Romance</h2>
+            <p class="genre-book">The Deal</p>
+            <p class="genre-book">Fear of Falling</p>
+        </section>
 
-  <aside>
-    <h3>Top Genre</h3>
-    <p>Fantasy is trending this month!</p>
-  </aside>
-</main>
+        <aside>
+            <h3>Top Genre</h3>
+            <p class="genre-book">Sport Romance is trending this month!</p>
+        </aside>
+    </main>
 
-<footer>
-  <p>&copy; <span id="year"></span> BookNest Reviews</p>
-</footer>
+    <footer>
+        <p>&copy; <span id="year"></span> BookNest Reviews</p>
+    </footer>
 
+    <button id="topBtn" onclick="topFunction()">↑ Top</button>
 
 
 </body>
 </html>
-<script src="js/scripts.js"></script>
+ <script src="js/scripts.js"></script>

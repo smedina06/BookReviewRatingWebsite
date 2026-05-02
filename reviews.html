@@ -1,53 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Reviews</title>
-  <link rel="stylesheet" href="styles/main.css">
-  <link rel="stylesheet" href="styles/reviews.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles/reviews.css">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <link rel="icon" href="images/favicon.png" type="image/png">
+
 </head>
 
 <body>
 
-<header>
-  <h1>Book Reviews</h1>
-</header>
+    <header>
+        <h1>Book Reviews</h1>
+    </header>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="reviews.html">Reviews</a>
-  <a href="genres.html">Genres</a>
-  <a href="about.html">About</a>
-</nav>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="genres.html">Genres</a>
+        <a href="about.html">About</a>
+    </nav>
 
-<main>
-  <section>
-    <h2>The Deal</h2>
-    <img src="images/thedeal.jpg" class="topbook">
-    <p>⭐⭐⭐⭐⭐</p>
-    <p>A thrilling dystopian novel with strong characters.</p>
-  </section>
+    <main>
+        <section class="review-slideshow">
+            <h2>Book Review Slideshow</h2>
 
-    <h2>Fear of Falling </h2>
-    <img src="images/fearoffalling.jpg" class="topbook">
-    <p>⭐⭐⭐⭐⭐</p>
-    <p>A thrilling dystopian novel with strong characters.</p>
-  </section>
+            <div class="slides">
+                <article class="review-slide">
+                    <img src="images/thedeal.jpg" alt="The Deal Cover" class="medium-img">
+                    <h3>The Deal</h3>
+                    <p class="stars">★★★★★</p>
+                    <p>A popular New Adult sports romance about Hannah Wells, who agrees to tutor star hockey player
+                        Garrett Graham in philosophy to boost his grades. </p>
+                </article>
 
+                <article class="review-slide">
+                    <img src="images/fearoffalling.jpg" alt="Fear Of Falling Cover" class="medium-img">
+                    <h3>Fear Of Falling</h3>
+                    <p class="stars">★★★★★</p>
+                    <p>A sports romance following Josie Scott, a photographer who gets trapped in an elevator with
+                        hockey star Wyatt Boone. It is a "he falls first" story involving fame, paparazzi, and romance.
+                    </p>
+                </article>
 
-  <section>
-    <h2>Hidden Empire</h2>
-    <img src="images/hiddenempire.jpeg" class="topbook">
-    <p>⭐⭐⭐⭐⭐</p>
-    <p>An emotional story about love and resilience.</p>
-  </section>
-</main>
+                <article class="review-slide">
+                    <img src="images/hiddenempire2.jpg" alt="Hiddern Empire Cover" class="medium-img">
+                    <h3>Hidden Empire</h3>
+                    <p class="stars">★★★★★</p>
+                    <p>Jade Donovan, after 17 years of abuse, discovers she is the daughter of a mafia don and has nine
+                        protective brothers. She attends "Empire Academy," a secret island college for mafia children.
+                    </p>
+                </article>
+            </div>
+        </section>
+        <section class="search-section">
+            <h2>Search for a Book</h2>
+            <input type="text" id="bookSearch" placeholder="Search by book title...">
+        </section>
+    </main>
 
-<footer>
-  <p>&copy; <span id="year"></span> BookNest Reviews</p>
-</footer>
+    <footer>
+        <p>&copy; <span id="year"></span> BookNest Reviews</p>
+    </footer>
 
+    <button id="topBtn" onclick="topFunction()">↑ Top</button>
 
 </body>
+
 </html>
 <script src="js/scripts.js"></script>
